@@ -300,26 +300,26 @@ h2{margin:0 0 14px; font-size:var(--h2); letter-spacing:.4px; font-weight:900; t
   .about-prose-block{padding:20px 22px}
 }
 
-/* --- Contact 联系板块：名片式设计（浅色卡片 + 深蓝/青绿） --- */
+/* --- Contact 联系板块：名片深色风格，无白底 --- */
 .contact-intro{margin-bottom:28px}
 .contact-people{display:flex;flex-direction:column;gap:24px;margin-top:24px}
 .contact-person{
-  background:#fafaf8;
-  border:1px solid #e5e3df;
+  background:rgba(16,16,16,.85);
+  border:1px solid rgba(255,255,255,.12);
   border-radius:12px;
   padding:32px 36px;
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:0 40px;
   align-items:start;
-  box-shadow:0 4px 20px rgba(0,0,0,.08);
-  color:#2c2c2c;
+  box-shadow:0 4px 20px rgba(0,0,0,.3);
+  color:rgba(255,255,255,.9);
 }
 .contact-person .person-left{}
-.contact-person .person-name{font-size:28px;font-weight:800;letter-spacing:.02em;color:#0d2840;margin:0 0 4px;font-family:Georgia,serif}
-.contact-person .person-title{font-size:14px;color:#2a9d8f;font-weight:600;margin-bottom:20px;letter-spacing:.02em}
-.contact-person .person-company{font-size:16px;font-weight:800;color:#0d2840;margin-bottom:8px;text-align:right;letter-spacing:.02em}
-.contact-person .person-address{font-size:13px;color:#555;line-height:1.65;margin:0;text-align:right}
+.contact-person .person-name{font-size:28px;font-weight:800;letter-spacing:.02em;color:#fff;margin:0 0 4px;font-family:Georgia,serif}
+.contact-person .person-title{font-size:14px;color:#5bc4be;font-weight:600;margin-bottom:20px;letter-spacing:.02em}
+.contact-person .person-company{font-size:16px;font-weight:800;color:rgba(255,255,255,.95);margin-bottom:8px;text-align:right;letter-spacing:.02em}
+.contact-person .person-address{font-size:13px;color:var(--muted);line-height:1.65;margin:0;text-align:right}
 .contact-person .person-right{
   display:flex;
   flex-direction:column;
@@ -330,20 +330,20 @@ h2{margin:0 0 14px; font-size:var(--h2); letter-spacing:.4px; font-weight:900; t
 .contact-person .social-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .contact-person .social-link{
   width:38px;height:38px;border-radius:50%;
-  background:#b0b0b0;
+  background:rgba(255,255,255,.2);
   display:flex;align-items:center;justify-content:center;
   color:#fff;font-size:13px;text-decoration:none;font-weight:700;
   transition:background .2s ease
 }
-.contact-person .social-link:hover{background:#0d2840;color:#fff}
-.contact-person .contact-line{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;justify-content:flex-end;font-size:14px;color:#444}
+.contact-person .social-link:hover{background:rgba(43,179,255,.5);color:#fff}
+.contact-person .contact-line{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;justify-content:flex-end;font-size:14px;color:var(--muted)}
 .contact-person .contact-line .social-row{margin-right:6px}
-.contact-person .contact-line a{color:#444;text-decoration:none}
-.contact-person .contact-line a:hover{color:#0d2840;text-decoration:underline}
-.contact-person .contact-meta .sep{margin:0 8px;color:#bbb;font-weight:300}
-.contact-person .contact-meta{font-size:14px;color:#444}
-.contact-person .contact-meta a{color:#444;text-decoration:none}
-.contact-person .contact-meta a:hover{color:#0d2840;text-decoration:underline}
+.contact-person .contact-line a{color:rgba(255,255,255,.85);text-decoration:none}
+.contact-person .contact-line a:hover{color:#5bc4be;text-decoration:underline}
+.contact-person .contact-meta .sep{margin:0 8px;color:rgba(255,255,255,.4);font-weight:300}
+.contact-person .contact-meta{font-size:14px;color:var(--muted)}
+.contact-person .contact-meta a{color:rgba(255,255,255,.85);text-decoration:none}
+.contact-person .contact-meta a:hover{color:#5bc4be;text-decoration:underline}
 @media (max-width:780px){
   .contact-person{grid-template-columns:1fr;gap:20px;padding:24px 22px}
   .contact-person .person-company,.contact-person .person-address{text-align:left}
@@ -382,5 +382,53 @@ h2{margin:0 0 14px; font-size:var(--h2); letter-spacing:.4px; font-weight:900; t
   .contact-products .products-right{min-height:260px}
 }
 
-/* Contact 页：与全站一致的深色背景，仅区块内保留名片式卡片 */
+/* Contact 页：与全站一致的深色背景，名片与左侧区块同色、无白底 */
 .section.contact-page{background:linear-gradient(180deg, transparent, rgba(255,255,255,.01));border-bottom:1px solid var(--line)}
+.contact-page .contact-person{
+  background:rgba(10,30,50,.92);
+  border-color:rgba(43,179,255,.2);
+}
+.contact-page .card.business-card,
+.contact-page .card{background:rgba(16,16,16,.85);border-color:rgba(255,255,255,.12)}
+.contact-products .products-right{background:#0a1e32}
+
+/* ========== 移动端自适应 ========== */
+body{overflow-x:hidden}
+/* 顶部栏：小屏换行 + 导航横向滚动 */
+@media (max-width: 900px){
+  .topbar-inner{flex-wrap:wrap; padding:14px 0; gap:12px}
+  .brand img{width:56px; height:56px; padding:6px}
+  .brand .name{font-size:18px}
+  .brand .tag{font-size:12px}
+  .nav{width:100%; order:3; justify-content:flex-start; overflow-x:auto; -webkit-overflow-scrolling:touch; padding:8px 0 4px; gap:12px; flex-wrap:nowrap; margin:0 -22px 0; padding-left:22px; padding-right:22px}
+  .nav a{font-size:13px; white-space:nowrap; padding:6px 0; min-height:44px; display:inline-flex; align-items:center}
+  .lang{order:2; margin-left:auto}
+  .lang a{padding:8px 12px; min-height:36px; display:inline-flex; align-items:center; justify-content:center}
+}
+@media (max-width: 640px){
+  .container{padding-left:16px; padding-right:16px}
+  .topbar-inner .nav{margin-left:-16px; margin-right:-16px; padding-left:16px; padding-right:16px}
+  .hero{min-height:72vh}
+  .hero .hero-inner{padding:48px 0 40px}
+  .section{padding:40px 0}
+  .section.alt{padding:40px 0}
+  h1{font-size:clamp(26px, 7vw, 42px)}
+  .sub{font-size:15px}
+  .cta-row{gap:10px; margin-top:18px}
+  .btn{padding:14px 18px; min-height:48px; font-size:15px}
+  .card .big{font-size:22px}
+  .kpi{font-size:28px}
+  .page-hero{padding:40px 0 28px}
+  .page-hero h1{font-size:clamp(24px, 6vw, 38px)}
+  .footer{padding:28px 0}
+  .footer .row{gap:20px}
+}
+/* 表格小屏横向滚动 */
+.table-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; margin:0 -16px; padding:0 16px}
+@media (min-width: 641px){ .table-wrap{margin:0; padding:0} }
+.table{min-width:480px}
+/* 触控友好 */
+@media (max-width: 900px){
+  .btn{min-height:44px}
+  .pill{min-height:40px; padding:10px 14px}
+}
