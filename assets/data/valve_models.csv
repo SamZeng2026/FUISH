@@ -1,0 +1,6 @@
+Model Code,Series,Size,Class,Body Material,Trim,Leakage,End Conn.,Actuator,Notes
+GC300-1-150-ANSI,GC300,1",ANSI 150,WCB,316/Stellited,Class IV,RF Flange,P100LA,Example
+GC300-2-300-ANSI,GC300,2",ANSI 300,WCB,316/Stellited,Class IV,RF Flange,P100LA,Example
+GC300-4-600-ANSI,GC300,4",ANSI 600,WC9,316/Stellited,Class V,BW,P100LA,Example
+AC300-3-150-ANSI,AC300,3",ANSI 150,WCB,316,Class IV,RF Flange,D100LC,Example
+AC300-6-300-ANSI,AC300,6",ANSI 300,WCB,316/Stellited,Class IV,BW,P100LA,Example

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# 上线前请将下方域名替换为您的实际域名
+Sitemap: https://www.fuish.cn/sitemap.xml

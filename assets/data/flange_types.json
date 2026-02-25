@@ -1,0 +1,38 @@
+[
+  {
+    "code": "WN",
+    "name_en": "Welding Neck Flange",
+    "name_cn": "带颈对焊法兰",
+    "name_ru": "Фланец приварной воротниковый (WN)"
+  },
+  {
+    "code": "BL",
+    "name_en": "Blind Flange",
+    "name_cn": "盲板法兰",
+    "name_ru": "Глухой фланец (BL)"
+  },
+  {
+    "code": "SO",
+    "name_en": "Slip-On Flange",
+    "name_cn": "平焊法兰",
+    "name_ru": "Надвижной фланец (SO)"
+  },
+  {
+    "code": "SW",
+    "name_en": "Socket Weld Flange",
+    "name_cn": "承插焊法兰",
+    "name_ru": "Фланец под приварку в раструб (SW)"
+  },
+  {
+    "code": "TH",
+    "name_en": "Threaded Flange",
+    "name_cn": "螺纹法兰",
+    "name_ru": "Резьбовой фланец (TH)"
+  },
+  {
+    "code": "SP",
+    "name_en": "Special Forgings",
+    "name_cn": "非标锻件/特殊法兰",
+    "name_ru": "Специальные поковки"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "code": "GC",
+    "en": "GC Series Cage-Guided Control Valve",
+    "cn": "GC 系列笼式导向调节阀",
+    "ru": "Серия GC, клеточный направляющий регулирующий клапан"
+  },
+  {
+    "code": "AC",
+    "en": "AC Series Angle Control Valve",
+    "cn": "AC 系列角式调节阀",
+    "ru": "Серия AC, угловой регулирующий клапан"
+  },
+  {
+    "code": "ADR100",
+    "en": "ADR100 Steam Desuperheating System",
+    "cn": "ADR100 减温系统",
+    "ru": "ADR100, система распылительного охлаждения пара"
+  },
+  {
+    "code": "ACT",
+    "en": "Actuator Systems (Pneumatic / Electric)",
+    "cn": "执行机构系统（气动/电动）",
+    "ru": "Приводы (пневмо/электро)"
+  }
+]
