@@ -34,84 +34,94 @@
       z-index: 1;
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      padding: 20px 24px 20px 24px;
+      gap: 14px;
+      padding: 20px 26px 20px 26px;
       height: 100%;
       box-sizing: border-box;
       justify-content: space-between;
     }
     .poster-products { flex-shrink: 0; }
     .poster-brand {
+      font-size: 52px;
+      font-weight: 900;
+      letter-spacing: .6px;
+      color: #fff;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 6px rgba(0,0,0,.5);
+    }
+    .poster-product-list {
+      list-style: none;
+      font-size: 22px;
+      line-height: 1.75;
+      color: rgba(160,220,210,.94);
+      font-style: italic;
+      text-shadow: 0 1px 3px rgba(0,0,0,.35);
+    }
+    .poster-product-list li {
+      border-bottom: 1px solid rgba(255,255,255,.1);
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+    }
+    .poster-product-list li:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .poster-photos {
+      flex: 1;
+      min-height: 145mm;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, rgba(8,28,48,.98) 0%, rgba(5,18,35,.98) 100%);
+      border-radius: 12px;
+      box-sizing: border-box;
+    }
+    .poster-photos img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,.2);
+      box-shadow: 0 6px 16px rgba(0,0,0,.35);
+    }
+    .poster-event {
+      flex-shrink: 0;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255,255,255,.18);
+    }
+    .poster-title {
+      margin: 0 0 6px;
       font-size: 32px;
       font-weight: 900;
       letter-spacing: .5px;
       color: #fff;
-      margin-bottom: 8px;
-      text-shadow: 0 1px 4px rgba(0,0,0,.5);
-    }
-    .poster-product-list {
-      list-style: none;
-      font-size: 13px;
-      line-height: 1.65;
-      color: rgba(160,220,210,.94);
-      font-style: italic;
-      text-shadow: 0 1px 2px rgba(0,0,0,.35);
-    }
-    .poster-product-list li {
-      border-bottom: 1px solid rgba(255,255,255,.08);
-      padding-bottom: 3px;
-      margin-bottom: 3px;
-    }
-    .poster-product-list li:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-    .poster-photos { flex-shrink: 0; }
-    .poster-photos img {
-      width: 100%;
-      height: auto;
-      max-height: 95mm;
-      object-fit: cover;
-      border-radius: 10px;
-      border: 1px solid rgba(255,255,255,.18);
-      box-shadow: 0 4px 12px rgba(0,0,0,.35);
-    }
-    .poster-event {
-      flex-shrink: 0;
-      padding-top: 12px;
-      border-top: 1px solid rgba(255,255,255,.15);
-    }
-    .poster-title {
-      margin: 0 0 6px;
-      font-size: 24px;
-      font-weight: 900;
-      letter-spacing: .4px;
-      color: #fff;
       text-transform: uppercase;
-      text-shadow: 0 1px 4px rgba(0,0,0,.45);
+      text-shadow: 0 2px 6px rgba(0,0,0,.45);
       line-height: 1.2;
     }
     .poster-line {
       margin: 0;
-      font-size: 14px;
+      font-size: 20px;
       color: rgba(255,255,255,.92);
       line-height: 1.45;
-      text-shadow: 0 1px 2px rgba(0,0,0,.4);
+      text-shadow: 0 1px 3px rgba(0,0,0,.4);
     }
-    .poster-line .label { color: rgba(160,220,200,.98); font-weight: 700; margin-right: 6px; }
+    .poster-line .label { color: rgba(160,220,200,.98); font-weight: 700; margin-right: 8px; }
     .poster-cta {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       margin-top: 10px;
       width: 100%;
-      padding: 10px 16px;
-      font-size: 14px;
+      padding: 12px 20px;
+      font-size: 22px;
       font-weight: 700;
-      letter-spacing: .3px;
+      letter-spacing: .4px;
       color: #fff;
       background: linear-gradient(180deg, rgba(255,106,0,.95), rgba(255,106,0,.75));
       border: 1px solid rgba(255,106,0,.55);
-      border-radius: 10px;
+      border-radius: 12px;
       text-decoration: none;
-      box-shadow: 0 2px 10px rgba(255,106,0,.25);
+      box-shadow: 0 4px 14px rgba(255,106,0,.25);
     }
   </style>
 </head>
@@ -136,6 +146,7 @@
         <h2 class="poster-title">📌 НЕФТЕГАЗ 2026</h2>
         <p class="poster-line"><span class="label">📍 Место</span> Москва (Крокус Экспо)</p>
         <p class="poster-line"><span class="label">🗓 Дата</span> 2 — 5 марта 2026</p>
+        <p class="poster-line"><span class="label">🏷 Стенд</span> 10C018</p>
         <span class="poster-cta">Связаться</span>
       </div>
     </div>

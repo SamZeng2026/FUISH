@@ -298,19 +298,19 @@ h2{margin:0 0 14px; font-size:var(--h2); letter-spacing:.4px; font-weight:900; t
 }
 .exhibition-poster-products{flex-shrink:0;}
 .exhibition-poster-brand{
-  font-size:30px;
+  font-size:26px;
   font-weight:900;
-  letter-spacing:.6px;
+  letter-spacing:.5px;
   color:#fff;
-  margin-bottom:12px;
-  text-shadow:0 2px 6px rgba(0,0,0,.5);
+  margin-bottom:10px;
+  text-shadow:0 1px 3px rgba(0,0,0,.5);
 }
 .exhibition-poster-product-list{
   margin:0;
   padding:0;
   list-style:none;
-  font-size:13px;
-  line-height:1.9;
+  font-size:12px;
+  line-height:1.85;
   color:rgba(160,220,210,.94);
   font-style:italic;
   text-shadow:0 1px 3px rgba(0,0,0,.35);
@@ -331,31 +331,31 @@ h2{margin:0 0 14px; font-size:var(--h2); letter-spacing:.4px; font-weight:900; t
 }
 .exhibition-poster-event{flex-shrink:0; padding-top:14px; border-top:1px solid rgba(255,255,255,.15);}
 .exhibition-poster-title{
-  margin:0 0 8px;
-  font-size:24px;
+  margin:0 0 6px;
+  font-size:20px;
   font-weight:900;
-  letter-spacing:.5px;
+  letter-spacing:.4px;
   color:#fff;
   text-transform:uppercase;
-  text-shadow:0 2px 6px rgba(0,0,0,.45);
+  text-shadow:0 1px 3px rgba(0,0,0,.45);
   line-height:1.2;
 }
 .exhibition-poster-line{
   margin:0;
-  font-size:14px;
+  font-size:13px;
   color:rgba(255,255,255,.92);
-  line-height:1.55;
-  text-shadow:0 1px 3px rgba(0,0,0,.4);
+  line-height:1.5;
+  text-shadow:0 1px 2px rgba(0,0,0,.4);
 }
 .exhibition-poster-line .label{color:rgba(160,220,200,.98); font-weight:700; margin-right:6px;}
-.exhibition-poster-cta{margin-top:12px;width:100%;justify-content:center; flex-shrink:0; font-size:14px; padding:12px 16px;}
+.exhibition-poster-cta{margin-top:10px;width:100%;justify-content:center; flex-shrink:0; font-size:13px; padding:10px 14px;}
 @media (max-width: 900px){
   .exhibition-poster{right:18px;width:min(340px, calc(100vw - 36px));min-height:460px}
   .exhibition-poster-inner{padding:22px 18px; gap:16px}
-  .exhibition-poster-brand{font-size:26px}
-  .exhibition-poster-title{font-size:22px}
-  .exhibition-poster-product-list{font-size:12px}
-  .exhibition-poster-line{font-size:13px}
+  .exhibition-poster-brand{font-size:22px}
+  .exhibition-poster-title{font-size:18px}
+  .exhibition-poster-product-list{font-size:11px}
+  .exhibition-poster-line{font-size:12px}
   .exhibition-poster-photos img{aspect-ratio:16/10}
 }
 @media (max-width: 640px){
