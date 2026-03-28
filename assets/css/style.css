@@ -251,6 +251,10 @@ h2{margin:0 0 14px; font-size:var(--h2); letter-spacing:.4px; font-weight:900; t
 }
 .hero.hero-slideshow-wrap .hero-inner{position:relative;z-index:2}
 
+/* Kill switch: old homepage HTML may still be cached with this block removed in source */
+.exhibition-poster,
+.exhibition-poster-neftegaz{display:none!important}
+
 /* --- About 页面版式 --- */
 .page-hero{
   padding:56px 0 44px;
